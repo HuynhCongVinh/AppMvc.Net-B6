@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url(../images/hinh-nen.jpeg);
+    background-size: cover;
+}
+/* ----------------------------------header--------------------------------------- */
+/* header{
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 999; 
+}
+header .logo{
+    width: 120px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    float: left;
+}
+header .logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+header .header-list{
+    margin-left: 750px;
+    width: auto;
+}
+header .header-list ul li{
+    list-style-type: none;
+    float: left;
+    height: 25px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 13px;
+}
+header > .header-list > ul > li:hover{
+    border-bottom: 4px solid white;
+}
+header .header-list ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+} */
+
+/* ---------------------------------subcars--------------------------------------- */
+/* header .header-list ul li{
+    position: relative;
+}
+.subcars{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 340px;
+    margin-top: 23px;
+    margin-left: -55px;
+    display: none;
+}
+.subcars ul li:hover{
+    background-color: white;
+}
+.subcars ul li:hover a{
+    color: black;
+}
+
+header .header-list ul li:hover .subcars{
+    display: block;
+} */
+/* ---------------------------------Home Pages--------------------------------------- */
+main{
+    /* margin-top: 80px; */
+    width: 90%;
+    height: auto;
+    display: flex;
+}
+main .home{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen có độ trong suốt 50% */
+    width: 100%; /* Chiều rộng của header */
+    z-index: 998; /* Đảm bảo Header sẽ luôn nằm trên các phần tử khác */
+    margin-top: 150px;
+    /* margin-left: 65%; */
+}
+/* .home-picture{
+    flex-shrink: 0;
+    width: 50%;
+
+}
+.home-picture img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-left: 250px;
+    margin-top: 100px;
+} */
+.home-content{
+    padding: 30px 30px;
+}
+.slogan{
+    color: white;
+    font-size: 18px;
+    /* font-weight: 800; */
+}
+.home-content .slogan b{
+    font-weight: 900;
+}
+.title-home-content{
+    margin-top: 15px;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+.button-seedetail{
+    width: 200px;
+    margin-top: 20px;
+}
+.button-seedetail a{
+    text-decoration: none;
+}
+.button-seedetail a p{
+    float: left;
+    padding: 12px;
+    background-color: white;
+    color: black;
+    font-weight: 400;
+}
+.button-seedetail a i{
+    padding: 12px;
+    padding-bottom: 13px;
+    background-color: black;
+    color: white;
+}
+/* --------------------------------------footer------------------------------------- */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.footer-all{
+    margin-left: 180px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-title{
+    color: white;
+    font-size: 22px;
+}
+.footer-container{
+    display: flex;
+}
+.footer-top{
+    margin-top: 10px;
+    width: 650px;
+    border-right: 5px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-top .footer-top-sub{
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+}
+.footer-top .footer-top-sub img{
+    width: 30px;
+    height: 30px;
+}
+.footer-top .footer-top-sub p{
+    margin-left: 5px;
+    font-size: 14px;
+    width: 200px;
+    color: white;
+}
+.footer-main{
+    margin-left: 100px;
+}
+.footer-main .footer-main-contact{
+    margin-top: 15px;
+}
+.footer-main .footer-main-contact i{
+    color: white;
+    font-size: 24px;
+    margin-left: 30px;
+}
+.footer-main .footer-main-contact p{
+    color: white;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 10px;
+}

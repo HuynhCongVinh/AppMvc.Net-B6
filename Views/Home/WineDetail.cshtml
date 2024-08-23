@@ -1,0 +1,94 @@
+@{
+    ViewData["Title"] = "Wine Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wines details | Gwine</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/wine.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
+    @* <link rel="icon" href="image/logo.png"> *@
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="wine-details">
+                <div class="wine-details-img">
+                    <img src="~/images/Wines/1.png" alt="">
+                </div>
+                <div class="wine-details-content">
+                    <p class="wine-name">Château Guadet</p>
+                    <p class="wine-name-details">Saint-Émilion Grand Cru (Grand Cru Classé) 2003</p>
+                    <ul>
+                        <li>France - </li>
+                        <li>Saint-Émilion Grand Cru - </li>
+                        <li>Château Guadet - </li>
+                        <li>Red wine - </li>
+                        <li>Blend</li>
+                    </ul>
+                    <div class="wine-comment">
+                        <img src="~/images/wine-details3.png" alt="">
+                        <p>Featured in Top 25 Spanish Priorat Red wines right now</p>
+                    </div>
+                    <div class="wine-comment">
+                        <img src="~/images/wine-details1.png" alt="">
+                        <p>This vintage rates better than any other year for this wine</p>
+                    </div>
+                </div>
+                <div class="wine-details-price">
+                    <img src="~/images/wine-details2.png" alt="">
+                    <p>$38.89</p>
+                </div>
+            </div>
+            <div class="wine-food-main">
+                <h3>Food that goes well with this wine</h3>
+                <p>Our wine experts think this Spanish Priorat Red wine would be a match made in heaven with these dishes. Bon appétit!</p>
+            </div>
+            <div class="wine-food">
+    
+                <div class="wine-pic">
+                    <img src="~/images/Wines/1.png" alt="">
+                </div>
+                <div class="food-pic">
+                    <img src="~/images/beef.png" alt="">
+                    <p>Beef</p>
+                </div>
+                <div class="food-pic">
+                    <img src="~/images/Deer.png" alt="">
+                    <p>Deer</p>
+                </div>
+                <div class="food-pic">
+                    <img src="~/images/Lamb.png" alt="">
+                    <p>Lamb</p>
+                </div>
+                <div class="food-pic">
+                    <img src="~/images/Poultry.png" alt="">
+                    <p>Poultry</p>
+                </div>
+            </div>
+            <div class="wine-style">
+                <div class="wine-style-content">
+                    <h3>Wine style</h3>
+                    <p class="wine-style-title">Spanish Priorat Red</p>
+                    <span><img src="~/images/Regions/Spain.png" alt="">Spain</span>
+                    <p class="content1">The traditional grape grown in this region is Garnacha (or Grenache).
+                         Small plantings of Carignan, Cabernet Sauvignon, Merlot and Syrah are common as well. <br> <br>
+
+                        Wines crafted from Garnacha are often described as intense, rich and powerful. In the Priorat,
+                         the wines are especially so, due in part to unique black volcanic soils and long, hot summers.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
+

@@ -1,0 +1,374 @@
+@{
+    ViewData["Title"] = "Wine Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/wine.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
+    @* <link rel="icon" href="image/logo.png"> *@
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="quote">
+                <p>Showing 500 wines between $10 - $40 </p><br>
+                <div class="filter">Filter</div>
+            </div>
+            <div class="content">
+                <div class="left-content">
+                    <div class="block-left-content">
+                        <h3 class="block-title">Wine Types</h3>
+                        <div class="options">
+                            <label for="checkbox11">
+                                <input type="checkbox" id="checkbox11">
+                                <span class="name-option">Red</span>
+                            </label>
+                            <label for="checkbox12">
+                                <input type="checkbox" id="checkbox12">
+                                <span class="name-option">White</span>
+                            </label>
+                            <label for="checkbox13">
+                                <input type="checkbox" id="checkbox13">
+                                <span class="name-option">Sparkling</span>
+                            </label>
+                            <label for="checkbox14">
+                                <input type="checkbox" id="checkbox14">
+                                <span class="name-option">Rosé</span>
+                            </label>
+                            <label for="checkbox15">
+                                <input type="checkbox" id="checkbox15">
+                                <span class="name-option">Dessert</span>
+                            </label>
+                            <label for="checkbox16">
+                                <input type="checkbox" id="checkbox16">
+                                <span class="name-option">Fortified</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="block-left-content">
+                        <h3 class="block-title">Price Range</h3>
+                        <div class="options">
+                            <p class="range-limit">10$</p>
+                            <input class="range-limit-input" type="range">
+                            <p class="range-limit">40$</p>
+                        </div>
+                    </div>
+
+                    <div class="block-left-content">
+                        <h3 class="block-title">Grapes</h3>
+                        <div class="options">
+                            <label for="checkbox21">
+                                <input type="checkbox" id="checkbox21">
+                                <span class="name-option">Carbernet Franc</span>
+                            </label>
+                            <label for="checkbox22">
+                                <input type="checkbox" id="checkbox22">
+                                <span class="name-option">Carbernet Sauvignon</span>
+                            </label>
+                            <label for="checkbox23">
+                                <input type="checkbox" id="checkbox23">
+                                <span class="name-option">Chardonnay</span>
+                            </label>
+                            <label for="checkbox24">
+                                <input type="checkbox" id="checkbox24">
+                                <span class="name-option">Grenache</span>
+                            </label>
+                            <label for="checkbox25">
+                                <input type="checkbox" id="checkbox25">
+                                <span class="name-option">Malbec</span>
+                            </label>
+                            <label for="checkbox26">
+                                <input type="checkbox" id="checkbox26">
+                                <span class="name-option">Merlot</span>
+                            </label>
+                            <label for="checkbox27">
+                                <input type="checkbox" id="checkbox27">
+                                <span class="name-option">Pinot Noir</span>
+                            </label>
+                            <label for="checkbox28">
+                                <input type="checkbox" id="checkbox28">
+                                <span class="name-option">Riesling</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="block-left-content">
+                        <h3 class="block-title">Regions</h3>
+                        <div class="options">
+                            <label for="checkbox31">
+                                <input type="checkbox" id="checkbox31">
+                                <span class="name-option">Bordeaux</span>
+                            </label>
+                            <label for="checkbox32">
+                                <input type="checkbox" id="checkbox32">
+                                <span class="name-option">Bourgogne</span>
+                            </label>
+                            <label for="checkbox33">
+                                <input type="checkbox" id="checkbox33">
+                                <span class="name-option">Napa valley</span>
+                            </label>
+                            <label for="checkbox34">
+                                <input type="checkbox" id="checkbox34">
+                                <span class="name-option">Piemonte</span>
+                            </label>
+                            <label for="checkbox35">
+                                <input type="checkbox" id="checkbox35">
+                                <span class="name-option">Rhone valley</span>
+                            </label>
+                            <label for="checkbox36">
+                                <input type="checkbox" id="checkbox36">
+                                <span class="name-option">Toscana</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="block-left-content">
+                        <h3 class="block-title">Countries</h3>
+                        <div class="options">
+                            <label for="checkbox41">
+                                <input type="checkbox" id="checkbox41">
+                                <span class="name-option"><img src="~/images/Regions/Argentina.png" alt="">  Argentina</span>
+                            </label>
+                            <label for="checkbox42">
+                                <input type="checkbox" id="checkbox42">
+                                <span class="name-option"><img src="~/images/Regions/Australia.png" alt="">Australia</span>
+                            </label>
+                            <label for="checkbox43">
+                                <input type="checkbox" id="checkbox43">
+                                <span class="name-option"><img src="~/images/Regions/Chile.png" alt="">Chile</span>
+                            </label>
+                            <label for="checkbox44">
+                                <input type="checkbox" id="checkbox44">
+                                <span class="name-option"><img src="~/images/Regions/France.png" alt="">France</span>
+                            </label>
+                            <label for="checkbox45">
+                                <input type="checkbox" id="checkbox45">
+                                <span class="name-option"><img src="~/images/Regions/Germany.png" alt="">Germany</span>
+                            </label>
+                            <label for="checkbox46">
+                                <input type="checkbox" id="checkbox46">
+                                <span class="name-option"><img src="~/images/Regions/Italy.png" alt="">Italy</span>
+                            </label>
+                            <label for="checkbox47">
+                                <input type="checkbox" id="checkbox47">
+                                <span class="name-option"><img src="~/images/Regions/Spain.png" alt="">Spain</span>
+                            </label>
+                            <label for="checkbox48">
+                                <input type="checkbox" id="checkbox48">
+                                <span class="name-option"><img src="~/images/Regions/United States.png" alt="">United States</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="block-left-content">
+                        <h3 class="block-title">Wine styles</h3>
+                        <div class="options">
+                            <label for="checkbox51">
+                                <input type="checkbox" id="checkbox51">
+                                <span class="name-option">Argentinian Malbec</span>
+                            </label>
+                            <label for="checkbox52">
+                                <input type="checkbox" id="checkbox52">
+                                <span class="name-option">Californian Cabernet Sauvignon</span>
+                            </label>
+                            <label for="checkbox53">
+                                <input type="checkbox" id="checkbox53">
+                                <span class="name-option">Central Italy Red</span>
+                            </label>
+                            <label for="checkbox54">
+                                <input type="checkbox" id="checkbox54">
+                                <span class="name-option">Spanish Red</span>
+                            </label>
+                            <label for="checkbox55">
+                                <input type="checkbox" id="checkbox55">
+                                <span class="name-option">Spanish Rioja Red</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <a asp-area="" asp-controller="Home" asp-action="WineDetail"><div class="right-content-block" data-wine-type="Red">
+                        <div class="wine-pic">
+                            <img src="~/images/Wines/1.png" alt="">
+                        </div>
+                        <div class="wine-info">
+                            <p class="name">Château Guadet</p>
+                            <p class="detail">Saint-Émilion Grand Cru (Grand Cru Classé) 2003</p>
+                            <div class="wine-info-sub">
+                                <img src="~/images/Regions/France.png" alt="">
+                                <p class="region">Saint-Émilion Grand Cru, France</p>
+                            </div>
+                        </div>
+                        <div class="wine-price">
+                            <p class="price">from only about $38,89</p>
+                        </div>
+                    </div></a>
+                    
+                    <a asp-area="" asp-controller="Home" asp-action="WineDetail"><div class="right-content-block">
+                        <div class="wine-pic">
+                            <img src="~/images/Wines/7.png" alt="">
+                        </div>
+                        <div class="wine-info">
+                            <p class="name">Joan Simó</p>
+                            <p class="detail">Les Eres Vinyes Velles 2014</p>
+                            <div class="wine-info-sub">
+                                <img src="~/images/Regions/Spain.png" alt="">
+                                <p class="region">Priorat, Spain</p>
+                            </div>
+                        </div>
+                        <div class="wine-price">
+                            <p class="price">from only about $36,28</p>
+                        </div>
+                    </div></a>
+
+                    <a asp-area="" asp-controller="Home" asp-action="WineDetail"><div class="right-content-block">
+                        <div class="wine-pic">
+                            <img src="~/images/Wines/9.png" alt="">
+                        </div>
+                        <div class="wine-info">
+                            <p class="name">Perez Cruz</p>
+                            <p class="detail">Carmenère Limited Edition 2007</p>
+                            <div class="wine-info-sub">
+                                <img src="~/images/Regions/Chile.png" alt="">
+                                <p class="region">Maipo Valley, Chile</p>
+                            </div>
+                        </div>
+                        <div class="wine-price">
+                            <p class="price">from only about $25,49</p>
+                        </div>
+                    </div></a>
+
+                    <a asp-area="" asp-controller="Home" asp-action="WineDetail"><div class="right-content-block" data-wine-type="Red">
+                        <div class="wine-pic">
+                            <img src="~/images/Wines/3.png" alt="">
+                        </div>
+                        <div class="wine-info">
+                            <p class="name">Giovanni Èderle</p>
+                            <p class="detail">Amarone della Valpolicella 2016</p>
+                            <div class="wine-info-sub">
+                                <img src="~/images/Regions/Italy.png" alt="">
+                                <p class="region">Amarone della Valpolicella, Italy</p>
+                            </div>
+                        </div>
+                        <div class="wine-price">
+                            <p class="price">from only about $39,58</p>
+                        </div>
+                    </div></a>
+
+                    <a asp-area="" asp-controller="Home" asp-action="WineDetail"><div class="right-content-block" data-wine-type="Red">
+                        <div class="wine-pic">
+                            <img src="~/images/Wines/4.png" alt="">
+                        </div>
+                        <div class="wine-info">
+                            <p class="name">Château Labégorce</p>
+                            <p class="detail">Zédé de Labégorce (Domaine Zédé) 2006</p>
+                            <div class="wine-info-sub">
+                                <img src="~/images/Regions/France.png" alt="">
+                                <p class="region">Margaux, France</p>
+                            </div>
+                        </div>
+                        <div class="wine-price">
+                            <p class="price">from only about $36,28</p>
+                        </div>
+                    </div></a>
+
+                    <a asp-area="" asp-controller="Home" asp-action="WineDetail"><div class="right-content-block">
+                        <div class="wine-pic">
+                            <img src="~/images/Wines/5.png" alt="">
+                        </div>
+                        <div class="wine-info">
+                            <p class="name">Terrazas de los Andes</p>
+                            <p class="detail">High Altitude Vineyards Malbec 2006</p>
+                            <div class="wine-info-sub">
+                                <img src="~/images/Regions/Argentina.png" alt="">
+                                <p class="region">Lujan de Cuyo, Argentina</p>
+                            </div>
+                        </div>
+                        <div class="wine-price">
+                            <p class="price">from only about $17,74</p>
+                        </div>
+                    </div></a>
+
+                    <a asp-area="" asp-controller="Home" asp-action="WineDetail"><div class="right-content-block">
+                        <div class="wine-pic">
+                            <img src="~/images/Wines/6.png" alt="">
+                        </div>
+                        <div class="wine-info">
+                            <p class="name">Schloss Johannisberg</p>
+                            <p class="detail">Gelblack Riesling Trocken 2006</p>
+                            <div class="wine-info-sub">
+                                <img src="~/images/Regions/Germany.png" alt="">
+                                <p class="region">Rheingau, Germany</p>
+                            </div>
+                        </div>
+                        <div class="wine-price">
+                            <p class="price">from only about $34,84</p>
+                        </div>
+                    </div></a>
+
+                    <a asp-area="" asp-controller="Home" asp-action="WineDetail"><div class="right-content-block">
+                        <div class="wine-pic">
+                            <img src="~/images/Wines/8.png" alt="">
+                        </div>
+                        <div class="wine-info">
+                            <p class="name">Gonzalez-Byass</p>
+                            <p class="detail">Elegante Sweet Cream N.V.</p>
+                            <div class="wine-info-sub">
+                                <img src="~/images/Regions/Spain.png" alt="">
+                                <p class="region">Jerez-Xérès-Sherry, Spain</p>
+                            </div>
+                        </div>
+                        <div class="wine-price">
+                            <p class="price">from only about $21,94</p>
+                        </div>
+                    </div></a>
+
+                    <a asp-area="" asp-controller="Home" asp-action="WineDetail"><div class="right-content-block">
+                        <div class="wine-pic">
+                            <img src="~/images/Wines/10.png" alt="">
+                        </div>
+                        <div class="wine-info">
+                            <p class="name">Anakena</p>
+                            <p class="detail">ONA (Special Reserve) Syrah 2015</p>
+                            <div class="wine-info-sub">
+                                <img src="~/images/Regions/Chile.png" alt="">
+                                <p class="region">Cachapoal Valley, Chile</p>
+                            </div>
+                        </div>
+                        <div class="wine-price">
+                            <p class="price">from only about $38,71</p>
+                        </div>
+                    </div></a>
+
+                    <a asp-area="" asp-controller="Home" asp-action="WineDetail"><div class="right-content-block">
+                        <div class="wine-pic">
+                            <img src="~/images/Wines/11.png" alt="">
+                        </div>
+                        <div class="wine-info">
+                            <p class="name">Robert Mondavi Private Selection</p>
+                            <p class="detail">Cabernet Sauvignon Aged in Bourbon Barrels 2016</p>
+                            <div class="wine-info-sub">
+                                <img src="~/images/Regions/United States.png" alt="">
+                                <p class="region">California, United States</p>
+                            </div>
+                        </div>
+                        <div class="wine-price">
+                            <p class="price">from only about $32,26</p>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+    
+</body>
+</html>

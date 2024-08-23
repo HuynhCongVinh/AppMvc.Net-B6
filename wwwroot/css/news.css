@@ -1,0 +1,786 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../image/nen-doc2.png);
+    background-size: cover;
+    
+}
+.hide{
+    display: none;
+}
+/* ----------------------------------header--------------------------------------- */
+header{
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen có độ trong suốt 50% */
+    position: fixed; /* Header sẽ cố định ở trên cùng */
+    top: 0;
+    left: 0;
+    width: 100%; /* Chiều rộng của header */
+    z-index: 999; /* Đảm bảo Header sẽ luôn nằm trên các phần tử khác */
+}
+header .logo{
+    width: 120px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-bottom: 10px;
+    float: left;
+}
+header .logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+header .header-list{
+    margin-left: 750px;
+    width: auto;
+}
+header .header-list ul li{
+    list-style-type: none;
+    float: left;
+    height: 25px;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 13px;
+}
+/* header i{
+    color: white;
+} */
+header > .header-list > ul > li:hover{
+    /* background-color: white; */
+    border-bottom: 4px solid white;
+}
+header .header-list ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+header .bars-icon{
+    display: none;
+}
+header .bars-icon i{
+    color: white;
+}
+/* ---------------------------------subcars--------------------------------------- */
+header .header-list ul li{
+    position: relative;
+}
+.subcars{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 340px;
+    margin-top: 23px;
+    margin-left: -55px;
+    display: none;
+}
+.subcars ul li:hover{
+    background-color: white;
+}
+.subcars ul li:hover a{
+    color: black;
+}
+
+header .header-list ul li:hover .subcars{
+    display: block;
+}
+/* ---------------------------------Home Pages--------------------------------------- */
+main{
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ---------------------NEWS----------------------------- */
+.news-title{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 80%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.news-title p{
+    font-size: 38px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 0;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+}
+.news-title-sub{
+    /* margin-left: 410px; */
+    width: 100%;
+    height: auto;
+    /* border-bottom: 5px solid white; */
+}
+.news-title-sub ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news-title-sub ul li{
+    margin: 0 10px;
+    list-style-type: none;
+    padding: 15px 20px;
+}
+.news-title-sub ul li a{
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.news-title-sub ul li:hover a{
+    border-bottom: 3px solid white;
+}
+.news-block{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 70%;
+    height: auto;
+    background-color: rgba(33, 25, 25, 0.9);
+}
+.news-block .news-block-title{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 0;
+}
+.news-block-sub{
+    display: flex;
+    flex-wrap: wrap;
+}
+.a-news{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    border: 4px solid white;
+    border-radius: 10px;
+    width: 40%;
+    transition: transform 0.3s ease;
+}
+.a-news:hover {
+    transform: translateY(-15px); /* Khi đưa chuột vào, nổi lên 5px */
+  }
+.a-news a{
+    text-decoration: none;
+}
+.a-news img{
+    width: 100%;
+    height: 270px;
+    border-radius: 10px;
+}
+.a-news h3{
+    margin: 20px 20px;
+    color: white;
+    font-size: 22px;
+}
+.a-news p{
+    margin: 15px 15px;
+    color: white;
+    font-size: 16px;
+    /* Cái này là giới hạn số dòng của đoạn miêu tả */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    word-break: break-work;
+}
+/* -------------------------------------New-detail---------------------------------- */
+.back{
+    background-color: rgba(0, 0, 0, 0.554);
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 70px;
+}
+.container{ 
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.h1container{
+    font-size: 120%;
+}
+.h1containerunder1{
+    font-size: 80%;
+    
+}
+.fontawesome i{
+    font-size: 250%;
+    padding: 0 5px;
+}
+.container-image{
+    margin-left: 150px;
+}
+.container-image img{
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+}
+.content{
+    width: 95%;
+    font-size: 80%;
+    padding: 30px 30px;
+}
+.divider {
+    width: 75%;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px auto; /* Điều chỉnh khoảng cách dưới và trên của đường gạch */
+}
+.content1{
+    text-align: center;
+}
+.back1{
+    /* background-color: rgb(191, 194, 193); */
+    margin-left: 110px;
+    width: 80%;
+}
+.back1 .p-back1{
+    text-align: center;
+    font-size: 24px;
+}
+.containercontent2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+.flex{
+    width: 40%;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.flex img{
+    margin-left: 50px;
+    border-radius: 10px;
+    width: 200px;
+}
+.flex p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+/* --------------------------------------Contact------------------------------------- */
+.bag{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+}
+.bag-contact{
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-right: 3px solid white;
+}
+.bag-title{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+.contact{
+    margin-left: 220px;
+    margin-top: 20px;
+    display: flex;
+}
+.contact i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+.contact-text{
+    font-size: 24px;
+}
+.bag-support{
+    width: 50%;
+    margin-top: 30px;
+}
+.contact-text-support{
+    font-size: 24px;
+    margin-left: 220px;
+    margin-bottom: 10px;
+}
+.help{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-right: 31%;
+    display: flex;
+    padding: 15px;
+    background-color: #671f1f;
+    border-radius: 30px;
+    margin-left: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+.help i{
+    margin-left: 60px;
+    margin-right: 10px;
+    padding: 3px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.help p{
+    font-size: 25px;
+}
+.chat{
+    width: 500px;
+    background-color: white;
+    margin-left: 200px;
+    margin-top: -40px;
+    border-radius: 10px;
+    display: none;
+}
+.chat-title{
+    background-color: #671f1f;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+.note{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 200;
+    color: #671f1f;
+}
+.field{
+    padding: 20px;
+}
+.field-name{
+    color: #671f1f;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.field input{
+    height: 35px;
+    width: 460px;
+    border: 1px solid #671f1f;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.sent-chat{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #671f1f;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* --------------------------------------footer------------------------------------- */
+footer{
+    /* position: fixed;
+    bottom: 0; */
+    width: 100%;
+    height: auto;
+    background-color: rgb(103, 31, 31, 0.85);
+}
+.footer-all{
+    margin-left: 180px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-title{
+    color: white;
+    font-size: 22px;
+}
+.footer-container{
+    display: flex;
+}
+.footer-top{
+    margin-top: 10px;
+    width: 650px;
+    border-right: 5px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-top .footer-top-sub{
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+}
+.footer-top .footer-top-sub img{
+    width: 30px;
+    height: 30px;
+}
+.footer-top .footer-top-sub p{
+    margin-left: 5px;
+    font-size: 14px;
+    width: 200px;
+    color: white;
+}
+.footer-main{
+    margin-left: 100px;
+}
+.footer-main .footer-main-contact{
+    margin-top: 15px;
+}
+.footer-main .footer-main-contact i{
+    color: white;
+    font-size: 24px;
+    margin-left: 30px;
+}
+.footer-main .footer-main-contact p{
+    color: white;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+/* -------------------------------responsive----------------------------- */
+@media screen and (max-width: 1000px) {
+    header .logo {
+        width: 90px;
+        height: 50px;
+        margin: 10px 10px;
+        float: left;
+    }
+    header .logo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    header .header-list{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    header .header-list ul li{
+        list-style-type: none;
+        width: 100%;
+        height: 20px;
+        padding: 10px 0;
+        cursor: pointer;
+        /* margin-left: 10px; */
+        margin-top: 10px;
+    }
+    header .bars-icon {
+        text-align: right;
+        display: block;
+        cursor: pointer;
+    }
+    header .bars-icon i{
+        font-size: 26px;
+        margin-top: 20px;
+        margin-right: 40px;
+    }
+
+    /* ---------------------NEWS----------------------------- */
+    .news-title{
+        margin-top: 50px;
+        width: 90%;
+    }
+    .news-title p{
+        font-size: 22px;
+        padding: 15px 0;
+    }
+    .news-title-sub{
+        width: 100%;
+    }
+    .news-title-sub ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .news-title-sub ul li{
+        margin: 0 10px;
+        list-style-type: none;
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+    .news-title-sub ul li a{
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+    }
+    .news-title-sub ul li:hover a{
+        border-bottom: 3px solid white;
+    }
+    .news-block{
+        margin-top: 30px;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .news-block .news-block-title{
+        font-size: 22px;
+        padding: 15px 0;
+    }
+    .a-news{
+        margin-left: 20px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .a-news img{
+        height: 330px;
+    }
+    /* -------------------------------------New-detail---------------------------------- */
+    .h1container{
+        font-size: 16px;
+    }
+    .container-image{
+        margin-left: 10px;
+    }
+    .container-image img{
+        width: 100%;
+    }
+    .back1{
+        margin-left: 10px;
+        width: 100%;
+    }
+    .containercontent2{
+        margin-left: 30px;
+    }
+    .flex{
+        margin-left: 20px;
+    }
+    .flex img{
+        margin-left: 10px;
+    }
+
+    .footer-all{
+        margin-left: 30px;
+    }
+    .footer-top{
+        width: 80%;
+        padding-right: 2%;
+    }
+    .footer-main{
+        margin-left: 5%;
+    }
+    .footer-main .footer-main-contact i{
+        margin-left: 3%;
+    }
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 450px) {
+    header .logo {
+        width: 90px;
+        height: 50px;
+        margin: 10px 10px;
+        float: left;
+    }
+    header .logo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    header .header-list{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+    header .header-list ul li{
+        list-style-type: none;
+        width: 100%;
+        height: 20px;
+        padding: 10px 0;
+        cursor: pointer;
+        /* margin-left: 10px; */
+        margin-top: 10px;
+    }
+    header .bars-icon {
+        text-align: right;
+        display: block;
+        cursor: pointer;
+    }
+    header .bars-icon i{
+        font-size: 26px;
+        margin-top: 20px;
+        margin-right: 40px;
+    }
+
+    /* ---------------------NEWS----------------------------- */
+    .news-title{
+        margin-top: 50px;
+        width: 90%;
+    }
+    .news-title p{
+        font-size: 22px;
+        padding: 15px 0;
+    }
+    .news-title-sub{
+        width: 100%;
+    }
+    .news-title-sub ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .news-title-sub ul li{
+        margin: 0 10px;
+        list-style-type: none;
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+    .news-title-sub ul li a{
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+    }
+    .news-title-sub ul li:hover a{
+        border-bottom: 3px solid white;
+    }
+    .news-block{
+        margin-top: 30px;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .news-block .news-block-title{
+        font-size: 22px;
+        padding: 15px 0;
+    }
+    .a-news{
+        margin-left: 20px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .a-news img{
+        height: 330px;
+    }
+    /* -------------------------------------New-detail---------------------------------- */
+    /* .back{
+        background-color: rgba(0, 0, 0, 0.554);
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+        margin-top: 70px;
+    }
+    .container{ 
+        color: white;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .h1container{
+        font-size: 120%;
+    }
+    .h1containerunder1{
+        font-size: 80%;
+        
+    }
+    .fontawesome i{
+        font-size: 250%;
+        padding: 0 5px;
+    }
+    .container-image{
+        margin-left: 150px;
+    }
+    .container-image img{
+        width: 85%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .content{
+        width: 95%;
+        font-size: 80%;
+        padding: 30px 30px;
+    }
+    .divider {
+        width: 75%;
+        height: 1px;
+        background-color: rgb(255, 255, 255);
+        margin: 10px auto; /* Điều chỉnh khoảng cách dưới và trên của đường gạch 
+    }*/
+    .back{
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .content1{
+        text-align: center;
+    }
+    .back1{
+        /* background-color: rgb(191, 194, 193); */
+        margin-left: 10px;
+        width: 100%;
+    }
+    .back1 .p-back1{
+        text-align: center;
+        font-size: 24px;
+    }
+    .containercontent2{
+        display: flex;
+        flex-wrap: wrap;
+        /* margin-left: 50px; */
+    }
+    .flex{
+        width: 30%;
+        /* margin-left: 50px; */
+        margin-bottom: 20px;
+    }
+    .flex img{
+        /* margin-left: 50px; */
+        border-radius: 10px;
+        width: 200px;
+    }
+    .flex p{
+        font-size: 18px;
+        margin-top: 10px;
+    } 
+    /* ------------------------------------------------contact------------------------------------- */
+    .bag{
+        display: flex;
+        flex-direction: column;
+    }
+    .bag-contact{
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid white;
+    }
+    .bag-title{
+        font-size: 36px;
+        margin-left: 10px;
+    }
+    .contact{
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+    .bag-support{
+        width: 100%;
+    }
+    .contact-text-support{
+        margin-left: 30px;
+    }
+    .help{
+        margin-left: 10px;
+    }
+    .chat{
+        width: 360px;
+        margin-left: 10px;
+    }
+    .field input{
+        width: 320px;
+    }
+    /* --------------------------------------footer------------------------------------ */
+    .footer-all{
+        margin-left: 30px;
+    }
+    .footer-top{
+        width: 80%;
+        padding-right: 2%;
+    }
+    .footer-main{
+        margin-left: 5%;
+    }
+    .footer-main .footer-main-contact i{
+        margin-left: 3%;
+    }
+}
